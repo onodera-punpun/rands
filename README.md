@@ -14,7 +14,7 @@ options オプション
 	-h    show help ヘルプ
 default execute "rands -l 8" デフォルトでは，rands -l 8 を実行
 
-install インストール
+installing インストール
 ------
 	sh install.sh
 this behavior would require or create a directory "/Users/$USER/bin"  
@@ -23,7 +23,7 @@ this behavior would require or create a directory "/Users/$USER/bin"
 Command is created in the "/Users/$USER/bin" , then create a symbolic link to the "/usr/local/bin"  
 コマンドは /Users/$USER/bin に生成されて，/usr/local/bin にシンボリックリンクを作成します
 
-uninstall
+uninstalling アンインストール
 ------
 	sh uninstall.sh
 remove symbolic link "/usr/local/bin/rands" and file "/Users/$USER/bin/rands"  

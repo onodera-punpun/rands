@@ -1,3 +1,11 @@
+#!/bin/sh
+set -e
+
+# install.sh
+# 2016/01/17(Sun)
+# walkingmask
+# install rands command
+
 gcc -Ofast rands.c -o rands
 chmod a+x rands
 

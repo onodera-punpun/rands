@@ -72,7 +72,7 @@ int main(int ac, char **av)
     // print random string
     int i;
     for(i=0; i<lng; i++){
-    	switch((random()+myTime.tv_usec)%5+1){
+    	switch(((random()-1000000)+myTime.tv_usec)%5+1){
     	case 1: // -a
     		if(a_flag == 1){ rputc(97, 25); }
     		else{ i--; }
@@ -105,7 +105,7 @@ int main(int ac, char **av)
 // random put character with ascii
 void rputc(int start, int range)
 {
-	printf("%c", rand()%range+start);
+	printf("%c", random()%range+start);
 }
 
 // random symbol range
